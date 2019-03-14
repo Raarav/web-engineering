@@ -1,0 +1,5 @@
+body{
+	background-color:yellow;
+	background-image:url(https://i.ytimg.com/vi/4IHCkJsHpPk/maxresdefault.jpg);
+	background-size:cover; /*cover value cover the full screen with photo*/
+}

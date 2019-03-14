@@ -1,0 +1,31 @@
+P{
+	text-align:center;
+	text-transform:capitalize; /*text-transform use for transform the string into upper lower and capitalize means world will capital*/
+	text-indent:-13px; /* indent is use to adjust before string space*/
+	letter-spacing:3px;
+	line-height:2.0;
+	direction:ltr;
+	word-spacing:-5px;
+	text-shadow:3px 2px blue;
+		
+}
+h1{
+	text-align:center;
+	text-transform:upper;
+	text-indent:-5px;
+	letter-spacing:3px;
+	line-height:2.0;
+	direction:ltr;
+	word-spacing:-5px;
+	text-shadow:3px 2px yellow;
+}
+h2{
+	text-align:center;
+	text-transform:lower;
+	text-indent:-13px;
+	letter-spacing:3px;
+	line-height:2.0;
+	direction:ltr;
+	word-spacing:-5px;
+	text-shadow:3px 2px red;
+}
