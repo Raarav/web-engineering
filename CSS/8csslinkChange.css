@@ -1,0 +1,9 @@
+a:link{
+  color:blue;
+}
+a:visited{
+	color:green; /*visi mean cursor is visited on word than text chnge it's color into green*/
+}
+a:hover{
+	color:yellow;/*it's shadow become yellow*/
+}

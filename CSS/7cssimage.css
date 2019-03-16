@@ -1,0 +1,11 @@
+img{
+	width:800px;
+	height:500px;
+	border-radius:100px;/*border radius used for change border fo image*/
+	max-width:100%;
+	height:auto;
+	
+}
+img:hover{
+	box-shadow:0 0 12px 5px rgba(0,140,186,0.5);
+}
