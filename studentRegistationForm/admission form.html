@@ -1,0 +1,121 @@
+<html>
+<center>
+<font size=8 color="blue" face="Times New Roman italicized & bold" ><i>Student Registeration form</i></font><br><br>
+<body>
+
+
+
+
+<fieldset style="width:900px" align=center > <!--Candidate personal details saction-->
+
+<legend size=15>Candidate personal details</legend>
+<form align=center >   
+   First name:<input type="text"> <br><br>
+   Last name:<input type="text"><br><br>
+   
+   Date of Birth:<input type="date" name="bday"><br><br>
+   
+   Gender:<input type="radio" name="r1">Male  
+          <input type="radio" name="r1">female
+		  <input type="radio" name="r1">Others<br><br>
+		  
+   Address:<textarea></textarea><br> <br>
+   
+   <label for="phone">Enter your phone number:</label>
+
+   <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+
+   <span class="note">format: 123-456-7890</span><br><br>
+   
+   
+   
+   E-mail: <input type="email" name="emailaddress"><br><br>
+   username:<input type="text"><br><br> 
+   password:<input type="password"><br><br>   
+   
+   
+   
+</form>
+</fieldset><br>
+
+
+<fieldset style="width:900px"> <!--Upload Saction-->
+<legend size=15>Upload Session</legend>
+<form>
+Attach a recent passport size color photo:<br><br>
+<form action="/action_page.php">
+
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit" value="Upload">
+</form>
+</form><br><br>
+
+<form>
+Attach a your signature:<br><br>
+<form action="/action_page.php">
+
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit" value="Upload">
+</form>
+</form>
+</fieldset><br>
+
+<fieldset style="width:900px"><!--Education saction-->
+<legend size=15>Education</legend>
+
+Marks in X : 
+<input type="text" name="marksX">
+<select> 
+<option value="CGPA"> CGPA </option>
+<option value="%"> Percentage </option>
+</select>
+<br><br>
+
+Marks in XII : 
+<input type="text" name="marksX">
+<select> 
+<option value="CGPA"> CGPA </option>
+<option value="%"> Percentage </option>
+</select>
+<br><br>
+
+<form>
+Marksheet of X:<br><br>
+<form action="/action_page.php">
+
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit" value="Upload">
+</form>
+</form>
+
+<form>
+Marksheet of XII:<br><br>
+<form action="/action_page.php">
+
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit" value="Upload">
+</form>
+</form>
+
+</fieldset><br>
+
+<fieldset style="width:900px"><!--Decaration saction-->
+<legend size=15>Decaration</legend><br>
+
+<input type="checkbox">
+I confirm that all the information provided br me is correct.<br><br>
+
+
+<input type="submit" value="Draft">
+<input type="submit" value="Reset">
+<input type="submit"><br><br>
+
+
+</fieldset>
+
+</center>
+
+</body>
+</html>
