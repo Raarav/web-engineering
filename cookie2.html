@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Buiding cookies</title>
+  <script>
+    function SetCookies()
+    {
+      n = escape(document.myform.name1.value) + ";";
+      e = escape(document.myform.id1.value) + ";";
+      p = escape(document.myform.profile1.value) + ";";
+      document.cookie = "name=" + n + "; max-age=" + 60*60*24*10;
+      document.cookie = "id=" + e + "; max-age=" + 60*60*24*10;
+      document.cookie = "profile=" + p + "; max-age=" + 60*60*24*10;
+      alert(document.cookie);
+    }
+    function GetCookies()
+    {
+      var cookiesArray = document.cookie.split(";");
+      for(var i=0; i < cookiesArray.length; i++)
+        {
+          var valueArray = cookiesArray[i].split("=");
+          if (valueArray[0].trim() == 'name') 
+            {
+              document.myform.name1.value = valueArray[1]
+            }
+          else if (valueArray[0].trim() == 'id') 
+            {
+              document.myform.id1.value = valueArray[1]
+            }
+          else if (valueArray[0].trim() == 'profile') 
+            {
+              document.myform.profile1.value = valueArray[1]
+            }
+            console.log(cookiesArray);
+            
+        }
+    }
+  </script>
+
+</head>
+
+<body>
+  <form name="myform" action="">
+    Employee name: <input type="text" name="name1"/><br><br>
+    Employee id: <input type="text" name="id1"/><br><br>
+    Employee Profile : <input type="text" name="profile1"/><br><br>
+    <input type="button" value="Set Cookies" onclick="SetCookies();"/>
+    <input type="button" value="Get Cookies" onclick="GetCookies();"/>
+  </form>
+
+
+</body>
+</html>
